@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8">
+       <title>CSS-selektorer</title> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+       <link rel="stylesheet" href="stylee.css">
+       <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header class="headern">
+            Av Eddie och Nils
+            <div class="toggle-btn" onclick="btnChange()">
+                    <span></span>
+                    <span id="burgerbottom"></span>
+            </div>
+
+            <div id="sidebar">
+                    
+                    
+                <ul>
+                     <li><a href="Startsida.html">Startsida</a></li>
+                     <li><a href="Combinatorselectors.html">Kombinatorer</a></li>
+                     <li><a href="simple.html">Enkla selektorer</a></li>
+                     <li><a href="attribute.html">Attribut</a></li>
+                     <li><a href="pseudo.html">Pseudoelement</a></li>
+                     
+              </ul>
+            </div>
+                
+        </header>
+        <h1 class="rubrik">Pseudoklasser</h1>
+        <p>
+            Pseudoklasser används för att definiera speciella tillstånd av ett element. Till exempel att formge ett element när användaren rör musen över det, att formge besökta och obesökta länkar olika och att formge ett element när det får fokus. <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">[1]</a>
+            <figure>
+                <img class="pseclasyn" src="images/Pseudoklassyntax.jpg" alt="syntaxpsecla" />
+                <figcaption class="pseclasynbild">Exempel på hur en syntax för en pseudoklass ser ut.</figcaption>              
+            </figure>
+        
+        <p class="pseudointro">
+            Här följer några exempel på Pseudoklasser.
+        </p>
+        <ol>
+            <li class="anch">Ankarpseudoklasserna bidrar med speciella effekter till ankarelementen i HTML. Ankarpseudoklasserna representerar tillståndet
+                för länkarna som obesökta, besökta, eller för närvarande vald. Ankarpseudoklasserna tillåter dig även att aktivera HTML-elementen 
+                eller att applicera en specifik stil till ett element när muspekaren pekar över den. <a href="https://codescracker.com/css/css-anchor-pseudo-classes.htm" target="_blank">[2]</a> 
+                <p>Ankarpseudoklasserna är följande</p>
+                <ul class="ancex">
+                    <li>a:link. Som applicerar stilar på icke-besökta länkarna.</li>
+                    <li>a:visited. Som applicerar stilar till besökta länkar</li>
+                    <li>a:hover. Som applicerar stilar till ett element över där muspekaren rör sig.</li>
+                    <li>a:active. Som applicerar stilar till ett aktivt element.</li>
+                    <li>a:focus. Som applicerar stilar till ett element under den period som den har användarfokus. </li>
+                </ul>
+            </li>
+            <li class="psecskl">Pseudoklasser kan även kombineras med CSS-klasser.  <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">[1]</a>
+              
+              <figure>
+                  <img class="psecssbil" src="images/PseCssmix.jpg" alt="pscsex" />
+                  <figcaption class="psecssbilinf">Så här kan en blandning av CSS-klass och Pseudoklass se ut i kod.</figcaption>
+              </figure> 
+              <p><a class="hajlajt" href="https://www.w3schools.com/"
+                target="_blank">PseudoCSS blandning</a></p>
+            </li>
+            <li>
+                :lang är en pseudoklass som tillåter att definiera speciella regler för speciella språk. Man kan söka efter ISO language code list online
+                för att hitta språkkoderna. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang" target="_blank">[3]</a>
+                <figure>
+                        <img class="langhtmlex" src="images/langh.jpg"  alt="langhtmlexem" />
+                        <figcaption class="langhtmlinf">Så här kan man skriva :lang uppställningen i HTML.</figcaption>
+                    </figure>
+                <div lang="en"><q>Bröd</q></div>
+            </li>
+            <li>Den sista som återges här är :first-child selektorn gör att man kan göra så att första elementet innanför ett annat element. <a href="https://css-tricks.com/almanac/selectors/f/first-child/" target="_blank">[4]</a>
+            <figure>
+                <img class="fichiex" src="images/Fichi.jpg" alt="fichiexe" />
+                <figcaption class="fichinf">Så här kan man skriva :first-child selektorn</figcaption>
+            </figure>
+            <div class="firstchi">
+                    <p>Aj</p>
+                    <p>Nej</p>
+            </div>
+                <figure>
+                    <img class="fichicssex" src="images/fichicss.jpg" alt="förbarn" />
+                    <figcaption class="föbacss">Så här utropas :first-child i CSS.</figcaption>
+                </figure>
+            </li>
+        </ol>
+        <footer class="Comfooter">
+                2019-09-18
+        </footer>
+
+        
+
+            <script src="syle.js"></script>
+
+
+            
+    </body>
+    </html>

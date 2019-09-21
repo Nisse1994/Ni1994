@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>CSS Attribute Selector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+        <header class="headern">
+                <p>Av Eddie och Nils</p>
+                <div class="toggle-btn" onclick="btnChange()">
+                        <span></span>
+                        <span id="burgerbottom"></span>
+                </div>
+    
+                <div id="sidebar">
+                        
+                        
+                    <ul>
+                         <li><a href="Startsida.html">Startsida</a></li>
+                         <li><a href="Combinatorselectors.html">Kombinatorer</a></li>
+                         <li><a href="Pseudoklasser.html">Pseudoklasser</a></li>
+                         <li><a href="simple.html">Enkla selektorer</a></li>
+                         <li><a href="pseudo.html">Pseudoelement</a></li>
+                  </ul>
+                </div>
+        </header>
+    <h1 class="rubrik">Attribute Selector</h1>
+    <h2 class="rubrik">Grunden</h2>
+    <p>Attribute selectorn används genom att först skriva elementets namn och 
+        sedan det attribut elementet ska ha för att väljas av selectorn i [] t.ex. "a[title]" (alla a-element med attributet "title"). .</p>
+        <a href="images/attribute.jpg"></a>
+        <img src="images/attribute.jpg" alt="" width="250"/>
+
+    <h2>Värde</h2>
+    <p>Med [attribute="value"] väljs inte bara elementets attribut utan också dess specifika värde. T.ex. "a[href="https://www.google.com"]"</p>
+        <a href="images/attrival.jpg"></a>
+        <img src="images/attrival.jpg" alt="" width="250"/>
+
+    <h2>Ord inom värde</h2>
+    <p>[attribute~="value"] väljer element baserat på attribut och ett specifikt ord som förekommer i dess värde. T.ex. "[title~="portrait"]. 
+        Alla element som har attributet "title" och det attributet ska dessutom innehålla ordet "portrait" i sitt värde. </p>
+        <a href="images/attrivalword.jpg"></a>
+        <img src="images/attrivalword.jpg" alt="" width="250"/>
+
+    <h2>Helt ord i början på ett värde</h2>
+    <p>[attribute|="value"] används till att välja element vars attribut har ett värde som börjar med ett specifikt helt(!) ord. T.ex. "[title|="portrait"].
+        Alla element med attributet "title", som i sin tur innehåller ordet "portait" i början på sitt värde (title="portait-photo" t.ex.).</p>
+        <a href="images/wholeword.jpg"></a>
+        <img src="images/wholeword.jpg" alt="" width="250"/>
+
+    <h2>Ord/orddel i början på ett värde</h2>
+    <p>Genom att använda [attribute^="value"] väljs ett element baserat på början på dess värde. Det behöver alltså inte vara ett helt ord. 
+        "[title^="port"]" skulle välja alla element med ett attribut vars värde börjar med "port". Detta skulle kunna vara "portrait" t.ex.</p>
+        <a href="images/wordpart.jpg"></a>
+        <img src="images/wordpart.jpg" alt="" width="250"/>
+
+    <h2>Ord/orddel i slutet på ett värde</h2>
+    <p>[attribute$="value"] fungerar på samma sätt som föregående selector men istället för att titta på början av ett värde tittar den på slutet.
+        Värdet behöver inte vara ett helt ord.</p>
+        <a href="images/wordend.jpg"></a>
+        <img src="images/wordend.jpg" alt="" width="250"/>
+
+    <h2>Ord/orddel var som helst i ett värde</h2>
+    <p>[attribute*="value"] kommer leta efter ett ord eller en orddel i hela elementets attributvärde. Alltså kan [title^="tra"] hitta "portait", "transport" 
+        eller "train" osv.</p>
+        <a href="images/wordany.jpg"></a>
+        <img src="images/wordany.jpg" alt="" width="250"/>
+
+        <footer class="Comfooter">
+                2019-09-18
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">Källa 1</a>
+                <p><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Källa 2</a></p>
+
+
+        </footer> 
+
+  
+
+
+        <script src="syle.js"></script>
+      
+
+
+</body>
+
+</html>

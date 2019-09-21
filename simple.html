@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Simple Selectors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <header class="headern">
+                <p>Av Eddie och Nils</p>
+                <div class="toggle-btn" onclick="btnChange()">
+                        <span></span>
+                        <span id="burgerbottom"></span>
+                </div>
+    
+                <div id="sidebar">
+                        
+                        
+                    <ul>
+                         <li><a href="Startsida.html">Startsida</a></li>
+                         <li><a href="Combinatorselectors.html">Kombinatorer</a></li>
+                         <li><a href="Pseudoklasser.html">Pseudoklasser</a></li>
+                         <li><a href="pseudo.html">Pseudoelement</a></li>
+                         <li><a href="attribute.html">Attribut</a></li>
+                    </ul>
+                </div>
+              
+        </header>
+    <h1 class="rubrik">Simple selectorer</h1>
+    <h2 class="rubrik">CSS element selector</h2>
+    <p>Html-element väljs baserat på sina namn.</p>
+    <a href="images/element.jpg"></a>
+    <img src="images/element.jpg" alt="" width="250">
+
+    <h2>CSS id selector</h2>
+    <p>Html-element väljs baserat på ett unikt id med hjälp av "#". T.ex. "#image2".</p>
+    <a href="images/id.jpg"></a>
+    <img src="images/id.jpg" alt="">
+
+    <h2>CSS class selector</h2>
+    <p>Html-element väljs baserat på tillhörighet till class. Detta görs med ".". T.ex. ".image2"</p>
+    <a href="images/class.jpg"></a>
+    <img src="images/class.jpg" alt="" width="250">
+
+    <h2>CSS universal selector</h2>
+    <p>Universal selector väljer alla html-element. Man använder "*" för detta.</p>
+    <a href="images/universal.jpg"></a>
+    <img src="images/universal.jpg" alt="" width="250">
+
+    <h2>CSS group selector</h2>
+    <p>Group selector samlar alla html-element som har samma style-definitioner. Detta gör att mindre kod kan användas till samma effekt. 
+        Istället för att skriva style-definitioner för elementen individuellt kan du helt enkelt sätta ett "," mellan de olika elementen.
+    Exempelvis "p, h2, h3{"</p>
+    <a href="images/group.jpg"></a>
+    <img src="images/group.jpg" alt="" width="250">
+
+    <footer class="Comfooter">
+        2019-09-18
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">Källa 1</a>
+        <p><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Källa 2</a></p>
+
+    </footer> 
+
+  
+
+
+    <script src="syle.js"></script>
+    
+
+</body>
+
+</html>

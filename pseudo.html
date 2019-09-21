@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>CSS Pseudo-selector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <header class="headern">
+                <p>Av Eddie och Nils</p>
+                <div class="toggle-btn" onclick="btnChange()">
+                        <span></span>
+                        <span id="burgerbottom"></span>
+                </div>
+    
+                <div id="sidebar">
+                        
+                        
+                    <ul>
+                         <li><a href="Startsida.html">Startsida</a></li>
+                         <li><a href="Combinatorselectors.html">Kombinatorer</a></li>
+                         <li><a href="Pseudoklasser.html">Pseudoklasser</a></li>
+                         <li><a href="simple.html">Enkla selektorer</a></li>
+                         <li><a href="attribute.html">Attribut</a></li>
+                  </ul>
+                </div>
+        </header>
+
+
+    <h1 class="rubrik">Pseudo-selector</h1>
+    <h2 class="rubrik">Pseudo-element</h2>
+    <p>CSS pseudo-element används till att ändra "style" på specifika delar av ett element. 
+        För att välja vilken del av ett element du vill ändra lägger du till "::" efter elementets namn och sedan t.ex. "first-letter" 
+        eller "first-line". </p>
+
+    <h2>First-line och first-letter</h2>
+    <p>::first-line används till att "styla" den första raden i exempelvis en paragraf (p::first-line {}).
+        ::first-letter påverkar endast första bokstaven i en text. Det är inga problem att använda flera pseudo-element samtidigt.
+        p::first-letter {font-size: xx-large;} p::first-line {font-size: large;} kommer göra första bokstaven i paragrafen till en större font
+        än reste av den första raden.</p>
+        <a href="images/first-line.jpg"></a>
+        <img src="images/first-line.jpg" alt="" width="250">
+        <a href="images/first-letter.jpg"></a>
+        <img src="images/first-letter.jpg" alt="" width= "250">
+    
+    <h2>Before pseudo-elementet</h2>
+    <p>::before gör att man kan lägga till innehåll före ett elements innehåll. Det kan vara extra text, en bild eller något annat.</p>
+    <a href="images/before.jpg"></a>
+    <img src="images/before.jpg" alt="" width= "250">
+
+    <h2>After pseudo-element</h2>
+    <p>::after gör att man kan lägga till innehåll före ett elements innehåll.</p>
+    <a href="images/after.jpg"></a>
+    <img src="images/after.jpg" alt="" width="250">
+    <h2>Selection pseudo-element</h2>
+    <p>::selection påverkar det som besökaren på en websida markerar/"highlightar". Den kan göra så att användaren tillfälligt ändrar
+        fonten, fontstorleken, färg på texten och/eller bakgrunden osv.</p>
+        <a href="images/selection.jpg"></a>
+        <img src="images/selection.jpg" alt="" width="250">
+    <h2>Pseudo-element och css-klasser</h2>
+    <p>Ex: element.class::pseudo-element{*styling*}</p>
+        <a href="images/classochelement.jpg"></a>
+        <img src="images/classochelement.jpg" alt="" width="250">
+
+        <footer class="Comfooter">
+                2019-09-18
+            <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Källa 1</a>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Källa 2</a></p>
+
+         </footer> 
+
+        
+
+
+        <script src="syle.js"></script>
+        
+        
+
+</body>
+</html>

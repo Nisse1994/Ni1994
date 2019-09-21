@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8">
+       <title>CSS-selektorer</title> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+       <link rel="stylesheet" href="stylee.css">
+       <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+            <header class="headern">
+                    <p>Av Eddie och Nils</p>
+                    <div class="toggle-btn" onclick="btnChange()">
+                            <span></span>
+                            <span id="burgerbottom"></span>
+                    </div>
+        
+                    <div id="sidebar">
+                            
+                            
+                        <ul>
+                             <li><a href="Startsida.html">Startsida</a></li>
+                             <li><a href="Pseudoklasser.html">Pseudoklasser</a></li>
+                             <li><a href="attribute.html">Attribut</a></li>
+                             <li><a href="pseudo.html">Pseudoelement</a></li>
+                             <li><a href="simple.html">Enkla attribut</a></li>
+                      </ul>
+                    </div>
+            </header>
+        <h1 class="rubrik">
+            Kombinatorer
+        </h1>
+        <p>
+            Det finns fyra olika kombinatorer. Ättlingsselektorn, barnselektorn, närliggande syskonselektorn 
+            och allmäna syskonselektorn. <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">[1]</a>
+            Här kommer lite information om selektorerna.
+        </p>
+        <figure>
+                <img class="ättex" src="images/Ättlingar.jpg" alt="exempelbild1" />
+                <figcaption class="attbild">Exempel på hur en ättlingsselektor och en barnselektor kan se ut i kod.</figcaption>
+            </figure>
+
+        <ol>
+            <li class="ättinf">
+                Ättlingsselektorn är ett ganska enkelt koncept om man tänker logiskt. Man är till exempel ättling till sin farfars farfars farfar. <a href="https://www.youtube.com/watch?v=84KE7OwMjYY" target="_blank">[2]</a>
+                
+                <div class="ättfunk">
+                    <p>blablabla</p>
+                    <div>
+                        <p>rarara</p>
+                    </div>
+                </div>
+                <figure>
+                    <img class="attcss" src="images/Descss.jpg"  alt="exatt" />
+                    <figcaption class="ättcssinf">Exempel på hur en ättlingsselektor anropas i CSS.</figcaption>
+                </figure>
+            </li>
+            <li>
+                Barnselektorn kan tolkas ungefär som ättlingsselektorn. Om man kollar på  bilden ovan så kommer bara yttersta p-taggen att highlightas då det är barnet.<a href="https://www.youtube.com/watch?v=MlJrAhGVIis" target="_blank">[3]</a>
+                <div class="barnfunk">
+                    <p>blablabla</p>
+                    <div>
+                        <p>rarara</p>
+                    </div>
+                </div>
+                <figure>
+                    <img class="chilcss" src="images/chicss.jpg" alt="exchi" />
+                    <figcaption class="chicssinf">Exempel på hur en barnselektor anropas i CSS.</figcaption>
+                </figure>
+            </li>
+
+            
+            <li>
+                    <div class="adjinf">
+                            En närliggande syskonselektor utmärks med att den närmaste p-taggen utanför exempelvis en div-tagg highlightas. Man kan tolka selektorn som att det är bara äldsta syskonet till div-taggen i bilden ovan som highlightas. <a href="https://www.youtube.com/watch?v=K92X4yyyfNY" target="_blank">[4]</a>
+                    </div>   
+                                
+                <div class="adsibex">
+                    <p>blablabla</p>
+                </div>
+                <p>rarara</p>
+                <p>jajaja</p> 
+                                               
+            </li>
+            <li>
+                <div class="gesibinf">
+                En allmän syskonselektor utmärks med att båda p-taggarna utanför div-taggen. Highlightas. Båda syskonen highlightas alltså. <a href="https://www.youtube.com/watch?v=UWzETKG2mYs" target="_blank">[5]</a></div>
+                <div class="gesibex">
+                        <p>blablabla</p>
+                    </div>
+                    <p>rarara</p>
+                    <p>jajaja</p> 
+                    
+            </li>
+
+        </ol>
+        <figure class="adjbild">
+                <img class="adjex" src="images/Adjsib.jpg"  alt="exempelbild2"/>
+                <figcaption class="närsys">Exempel på kod som kan användas till närliggande syskonselektor och allmäna syskonselektor.</figcaption>
+        </figure>
+        <figure>
+                <img class="adjcssex" src="images/Adjcss.jpg" alt="adex"/>
+                <figcaption class="Narinf">Exempel på hur närliggande syskonselektorer kan utropas i CSS.</figcaption>
+            </figure> 
+            <figure>
+                    <img class="gencssex" src="images/Almcss.jpg" alt="geex" />
+                    <figcaption class="Alinf">Exempel på hur allmäna syskonselektorer kan utropas i CSS.</figcaption>
+            </figure>
+
+        <footer class="Comfooter">
+                2019-09-18
+        </footer>
+
+            
+
+
+            <script src="syle.js"></script>
+            
+    </body> 
+    
+    
+    </html>

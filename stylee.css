@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #013246;
+    left: -250px;
+    transition: all 0.5s;
+    z-index: 999;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin-top: 35px; 
+}
+#sidebar ul li a{
+    display: block;
+    
+    list-style: none;
+    padding: 20px 25px;
+    margin: 15px 20px;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+#sidebar ul li a:hover {
+ background: darkorchid;   
+}
+
+
+.toggle-btn {
+    width: 55px;
+    height: 35px;
+    position: fixed;
+    z-index: 99999;
+}
+.toggle-btn span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: blueviolet;
+    margin-top: 6px;
+    position: absolute;
+    
+}
+#burgerbottom {
+    margin-top: 25px;
+
+}
+
+body {
+       
+       font-family: 'Patua One', cursive;
+       background-color: #013246;
+       color: #940802;
+       font-size: 17px;
+       text-align: center;
+    
+       
+}
+a:visited {
+color: brown;
+}
+a:link {
+    color: blue;
+}
+a:hover {
+    color: orange;
+}
+a:active {
+    color: white;
+}
+a:focus  {
+color: purple;
+}
+.rubrik {
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+.psecskl  {
+    padding: 19px;
+}
+a.hajlajt:hover{
+    color: darkgray;
+}
+.psecssbil {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.psecssbilinf{
+    font-size: 15px;
+}
+
+
+
+.headern {
+    font-size: 26px;
+    display: inline-block;
+    background-color: #570211;
+    color: #555555;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+
+}
+
+.slutklass {
+    padding: 65px;
+}
+
+.ättex {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.attbild {
+    font-size: 15px;
+}
+.chilcss {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.attcss {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.chicssinf {
+    font-size: 15px;
+}
+.ättcssinf {
+    font-size: 15px;
+}
+
+.ättfunk p {
+    color: orangered;
+}
+.ättinf {
+    padding: 50px;
+}
+.barnfunk > p {
+    color: orangered;
+}
+.adjex {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.adjinf {
+    padding: 50px;
+}
+.adjbild {
+    padding: 50px;
+}
+.närsys {
+    font-size: 15px;
+}
+.adsibex + p {
+    color: orangered;
+}
+.gesibinf {
+    padding: 20px;
+}
+.gesibex ~ p {
+    color: orangered;
+
+}
+.adjcssex {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.gencssex {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.Alinf {
+    font-size: 15px;
+}
+.Narinf {
+    font-size: 15px;
+}
+.pseudointro {
+    padding: 15px;
+}
+
+.Comfooter {
+    font-size: 15px;
+    background-color: midnightblue;
+    color: white;
+    padding: 17px;
+}
+.pseclasyn {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px;
+}
+.pseclasynbild {
+    font-size: 15px;
+}
+.anch {
+    padding: 18px;
+}
+.ancex {
+    padding: 22px;
+}
+:lang(en) > q{quotes: '\00AB' '\00BB' '\201E' '\201C';}
+.langhtmlex {
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    width: 250px 
+}
+.langhtmlinf{
+    font-size: 15px;
+}
+.fichiex {
+    padding: 10px;
+    border: 4px; 
+    border-radius: 20px;
+    width: 250px;
+}
+.fichinf {
+font-size: 15px;
+}
+.firstchi p:first-child {
+    color: orangered;
+}
+.fichicssex {
+padding: 10px;
+border: 4px;
+border-radius: 20px;
+width: 250px;
+}
+.föbacss {
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #366
+        
+    }
+    .pseclasyn {
+        width: 450px;
+    }
+
+    .psecssbil {
+        width: 450px;
+    }
+    .langhtmlex {
+        width: 450px;
+    }
+    .fichiex {
+        width: 450px;
+    }
+    .fichicssex {
+        width: 450px;
+    }
+    .psecssbilinf {
+        font-size: 17px;
+    }
+    .langhtmlinf {
+        font-size: 17px;
+    }
+    .fichinf {
+        font-size: 17px;
+    }
+    .föbacss {
+        font-size: 17px;
+    }
+    
+
+
+@media only screen and (min-width: 1000px){
+    body {
+        background-color:darkgreen;
+           
+}
+}
+}
